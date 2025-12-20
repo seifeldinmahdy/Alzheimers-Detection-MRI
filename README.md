@@ -145,7 +145,7 @@ Key hyperparameters (from `config.json`):
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Alzheimers-Detection-MRI.git
+git clone https://github.com/seifeldinmahdy1/Alzheimers-Detection-MRI.git
 cd Alzheimers-Detection-MRI
 
 # Install dependencies
