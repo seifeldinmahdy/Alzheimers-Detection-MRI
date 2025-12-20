@@ -1,0 +1,74 @@
+{
+  "gradcam": {
+    "GWO": {
+      "params": {
+        "smoothing_sigma": 2.07191914152709,
+        "n_smooth_samples": 5,
+        "noise_std": 0.3
+      },
+      "score": 0.4596059421921263,
+      "time": 22.41933822631836
+    },
+    "PSO": {
+      "params": {
+        "smoothing_sigma": 2.8964357963073715,
+        "n_smooth_samples": 13,
+        "noise_std": 0.3
+      },
+      "score": 0.45780236791185774,
+      "time": 26.430195093154907
+    },
+    "BAT": {
+      "params": {
+        "smoothing_sigma": 2.125798380291502,
+        "n_smooth_samples": 1,
+        "noise_std": 0.29360254782799144
+      },
+      "score": 0.4559494719446516,
+      "time": 21.531976461410522
+    },
+    "DE": {
+      "params": {
+        "smoothing_sigma": 2.321125935743733,
+        "n_smooth_samples": 1,
+        "noise_std": 0.25928592740280787
+      },
+      "score": 0.45158623483614857,
+      "time": 27.976319789886475
+    }
+  },
+  "shap": {
+    "GWO": {
+      "params": {
+        "background_size": 55,
+        "nsamples": 192
+      },
+      "score": 0.4699634891675128,
+      "time": 20.783538341522217
+    },
+    "PSO": {
+      "params": {
+        "background_size": 10,
+        "nsamples": 200
+      },
+      "score": 0.5064001916825485,
+      "time": 21.286882162094116
+    },
+    "BAT": {
+      "params": {
+        "background_size": 14,
+        "nsamples": 175
+      },
+      "score": 0.4956270092378787,
+      "time": 19.784078359603882
+    },
+    "DE": {
+      "params": {
+        "background_size": 20,
+        "nsamples": 175
+      },
+      "score": 0.47796035727824016,
+      "time": 21.282875061035156
+    }
+  }
+}
