@@ -2,10 +2,10 @@
   "selected_features": 640,
   "total_features": 1280,
   "performance": {
-    "baseline_f1": 0.5355105180696603,
-    "aco_best_f1": 0.5679588275405287,
+    "baseline_f1": 0.5255802119401585,
+    "aco_best_f1": 0.5688423034737514,
     "n_features_total": 1280,
     "n_features_selected": 640,
-    "improvement": 0.03244830947086841
+    "improvement": 0.04326209153359295
   }
 }
