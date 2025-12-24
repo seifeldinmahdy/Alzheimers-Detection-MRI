@@ -1,0 +1,187 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Alzheimer's Classification - Full Summary</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+            h1 { color: #333; text-align: center; }
+            h2 { color: #666; border-bottom: 2px solid #4CAF50; padding-bottom: 10px; }
+            h3 { color: #888; }
+            .section { background: white; margin: 20px 0; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+            .class-section { margin: 20px 0; }
+            .image-grid { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+            .image-item { border: 1px solid #ddd; padding: 5px; background: white; border-radius: 5px; }
+            .image-item img { max-width: 300px; border-radius: 3px; }
+            .image-item p { text-align: center; margin: 5px 0; font-size: 12px; }
+            .metrics-table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+            .metrics-table th, .metrics-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+            .metrics-table th { background-color: #4CAF50; color: white; }
+            .metrics-table tr:nth-child(even) { background-color: #f2f2f2; }
+            .plot-container { text-align: center; margin: 20px 0; }
+            .plot-container img { max-width: 100%; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        </style>
+    </head>
+    <body>
+        <h1>🧠 Alzheimer's MRI Classification - Summary Report</h1>
+        <p style="text-align: center; color: #666;">Generated: 2025-12-24 09:16:59</p>
+    
+        <div class="section">
+            <h2>🎯 Best Hyperparameters (from Metaheuristic Optimization)</h2>
+            <table class="metrics-table">
+                <tr><th>Parameter</th><th>Value</th></tr>
+        <tr><td>Learning Rate</td><td>0.000933</td></tr><tr><td>Weight Decay</td><td>0.003895</td></tr><tr><td>Dropout Rate</td><td>0.3121</td></tr><tr><td>Unfreeze Backbone Epoch</td><td>0</td></tr><tr><td>Batch Size</td><td>32</td></tr><tr><td>Augmentation Strength</td><td>0.5777</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>📊 Final Model Performance</h2>
+            <table class="metrics-table">
+                <tr><th>Metric</th><th>Value</th></tr>
+        <tr><td>Test Accuracy</td><td>0.9100</td></tr><tr><td>Balanced Accuracy</td><td>0.9256</td></tr><tr><td>Macro F1 Score</td><td>0.9243</td></tr><tr><td>Best Epoch</td><td>6</td></tr><tr><td>Best Validation F1</td><td>0.9395</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>📈 Training & Optimization Curves</h2>
+        
+            <div class="plot-container">
+                <h3>Training & Validation Curves</h3>
+                <img src="training_curves.png" alt="Training & Validation Curves" style="max-width: 800px;">
+            </div>
+            <div class="plot-container">
+                <h3>Phase 1 Algorithm Convergence</h3>
+                <img src="phase_1_convergence_curves.png" alt="Phase 1 Algorithm Convergence" style="max-width: 800px;">
+            </div>
+            <div class="plot-container">
+                <h3>Phase 1 Algorithm Comparison</h3>
+                <img src="phase_1_algorithm_comparison.png" alt="Phase 1 Algorithm Comparison" style="max-width: 800px;">
+            </div>
+            <div class="plot-container">
+                <h3>Metaheuristic Ranking</h3>
+                <img src="metaheuristic_ranking.png" alt="Metaheuristic Ranking" style="max-width: 800px;">
+            </div>
+            <div class="plot-container">
+                <h3>Baseline vs Optimized Performance</h3>
+                <img src="baseline_vs_optimized.png" alt="Baseline vs Optimized Performance" style="max-width: 800px;">
+            </div>
+            <div class="plot-container">
+                <h3>XAI Algorithm Comparison</h3>
+                <img src="xai_algorithm_comparison.png" alt="XAI Algorithm Comparison" style="max-width: 800px;">
+            </div>
+        </div>
+        <div class="section">
+            <h2>XAI Explanations (Grad-CAM & SHAP)</h2>
+    
+        <div class="class-section">
+            <h3>Mild Dementia</h3>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="Mild_Dementia/correct_0_gradcam.png" alt="correct_0_gradcam.png">
+                    <p>correct_0_gradcam.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Mild_Dementia/correct_0_shap.png" alt="correct_0_shap.png">
+                    <p>correct_0_shap.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Mild_Dementia/correct_1_gradcam.png" alt="correct_1_gradcam.png">
+                    <p>correct_1_gradcam.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Mild_Dementia/correct_1_shap.png" alt="correct_1_shap.png">
+                    <p>correct_1_shap.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Mild_Dementia/incorrect_0_gradcam.png" alt="incorrect_0_gradcam.png">
+                    <p>incorrect_0_gradcam.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Mild_Dementia/incorrect_1_gradcam.png" alt="incorrect_1_gradcam.png">
+                    <p>incorrect_1_gradcam.png</p>
+                </div>
+            </div>
+        </div>
+        <div class="class-section">
+            <h3>Moderate Dementia</h3>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="Moderate_Dementia/correct_0_gradcam.png" alt="correct_0_gradcam.png">
+                    <p>correct_0_gradcam.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Moderate_Dementia/correct_0_shap.png" alt="correct_0_shap.png">
+                    <p>correct_0_shap.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Moderate_Dementia/correct_1_gradcam.png" alt="correct_1_gradcam.png">
+                    <p>correct_1_gradcam.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Moderate_Dementia/correct_1_shap.png" alt="correct_1_shap.png">
+                    <p>correct_1_shap.png</p>
+                </div>
+            </div>
+        </div>
+        <div class="class-section">
+            <h3>Non Demented</h3>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="Non_Demented/correct_0_gradcam.png" alt="correct_0_gradcam.png">
+                    <p>correct_0_gradcam.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Non_Demented/correct_0_shap.png" alt="correct_0_shap.png">
+                    <p>correct_0_shap.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Non_Demented/correct_1_gradcam.png" alt="correct_1_gradcam.png">
+                    <p>correct_1_gradcam.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Non_Demented/correct_1_shap.png" alt="correct_1_shap.png">
+                    <p>correct_1_shap.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Non_Demented/incorrect_0_gradcam.png" alt="incorrect_0_gradcam.png">
+                    <p>incorrect_0_gradcam.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Non_Demented/incorrect_1_gradcam.png" alt="incorrect_1_gradcam.png">
+                    <p>incorrect_1_gradcam.png</p>
+                </div>
+            </div>
+        </div>
+        <div class="class-section">
+            <h3>Very mild Dementia</h3>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="Very_mild_Dementia/correct_0_gradcam.png" alt="correct_0_gradcam.png">
+                    <p>correct_0_gradcam.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Very_mild_Dementia/correct_0_shap.png" alt="correct_0_shap.png">
+                    <p>correct_0_shap.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Very_mild_Dementia/correct_1_gradcam.png" alt="correct_1_gradcam.png">
+                    <p>correct_1_gradcam.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Very_mild_Dementia/correct_1_shap.png" alt="correct_1_shap.png">
+                    <p>correct_1_shap.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Very_mild_Dementia/incorrect_0_gradcam.png" alt="incorrect_0_gradcam.png">
+                    <p>incorrect_0_gradcam.png</p>
+                </div>
+                <div class="image-item">
+                    <img src="Very_mild_Dementia/incorrect_1_gradcam.png" alt="incorrect_1_gradcam.png">
+                    <p>incorrect_1_gradcam.png</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+    </html>
+    
