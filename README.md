@@ -103,7 +103,7 @@ Compare multiple optimization algorithms:
 
 ### 4. Phase 2: SA-Tuned Optimization
 - Simulated Annealing fine-tuning of top performers
-- WOA (Whale Optimization Algorithm) integration
+- WOA (Whale Optimization Algorithm) and Grey Wolf Optimization (GWO) integration
 
 ### 5. XAI Analysis
 - GradCAM heatmaps for visual explanations
@@ -145,7 +145,7 @@ Key hyperparameters (from `config.json`):
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Alzheimers-Detection-MRI.git
+git clone https://github.com/seifeldinmahdy1/Alzheimers-Detection-MRI.git
 cd Alzheimers-Detection-MRI
 
 # Install dependencies
